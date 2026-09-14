@@ -7,5 +7,5 @@ interface SmoothScrollProps {
 }
 
 export const SmoothScroll: React.FC<SmoothScrollProps> = ({ children }) => {
-  return <div className="smooth-scroll-wrapper">{children}</div>;
+  return <div className="">{children}</div>;
 };

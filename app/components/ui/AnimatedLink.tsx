@@ -16,23 +16,16 @@ export const AnimatedLink: React.FC<AnimatedLinkProps> = ({
 }) => {
   if (external) {
     return (
-      <a
-        href={href}
-        target="_blank"
-        rel="noopener noreferrer"
-        className={`inline-flex items-center gap-1 transition-colors hover:text-white ${className}`}
-      >
+      <a href={href} target="_blank" rel="noopener noreferrer" className={className}>
         {children}
       </a>
     );
   }
 
   return (
-    <Link
-      href={href}
-      className={`inline-flex items-center gap-1 transition-colors hover:text-white ${className}`}
-    >
+    <Link href={href} className={className}>
       {children}
     </Link>
   );
 };
+
